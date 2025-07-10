@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .square {
+        background-color: black;
+        width: 25px;
+        height: 25px;
+      }
+      .circle {
+        background-color: blue;
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+    <!--squareの場合、色をつけてあげないと見えない。ただし、文字の場合見える。-->
+  </head>
+  <body>
+    <!--divは見えない箱-->
+    <div class="iframe-content resizable">
+      <div class="large centered row">
+        <div class="col">
+          <div class="square"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="medium justified row row-1">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="medium justified row row-2">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="medium row">
+      <fieldset class="controls">
+        <button class="button revert">Revert row 1</button>
+        <button class="button revert">Revert row 2</button>
+      </fieldset>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
