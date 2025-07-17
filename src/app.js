@@ -65,3 +65,12 @@ const revertScope2 = () => scope2.revert();
 
 $button1.addEventListener('click', revertScope1);
 $button2.addEventListener('click', revertScope2);
+
+
+animate('.triangle', {
+  x: '17rem',
+  delay: stagger(100),
+  duration: stagger(200, { start: 500 }),
+  loop: true,
+  alternate: true
+});
