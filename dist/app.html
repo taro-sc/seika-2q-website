@@ -15,6 +15,18 @@
         background-color: blue;
         width: 30px;
         height: 30px;
+        border-radius: 100px;
+      }
+      .width{
+        display: flex;
+         /* justify-content: space-around;  */
+      }
+      .triangle{
+        background-color: red;
+        width: 25px;
+        height: 25px;
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
       }
     </style>
     <!--squareの場合、色をつけてあげないと見えない。ただし、文字の場合見える。-->
@@ -29,7 +41,7 @@
       </div>
     </div>
 
-    <div class="medium justified row row-1">
+    <div class="aa">
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="circle"></div>
@@ -40,7 +52,7 @@
       <div class="circle"></div>
       <div class="circle"></div>
     </div>
-    <div class="medium justified row row-2">
+    <div class="width">
       <div class="circle"></div>
       <div class="circle"></div>
       <div class="circle"></div>
@@ -51,12 +63,29 @@
       <div class="circle"></div>
       <div class="circle"></div>
     </div>
+   
     <div class="medium row">
-      <fieldset class="controls">
+      <!-- <fieldset class="controls">
         <button class="button revert">Revert row 1</button>
         <button class="button revert">Revert row 2</button>
-      </fieldset>
+      </fieldset> -->
     </div>
+    <div class="small row">
+  <div class="triangle"></div>
+  <div class="padded label"></div>
+</div>
+<div class="small row">
+  <div class="triangle"></div>
+  <div class="padded label"></div>
+</div>
+<div class="small row">
+  <div class="triangle"></div>
+  <div class="padded label"></div>
+</div>
+<div class="small row">
+  <div class="triangle"></div>
+  <div class="padded label"></div>
+</div>
     <script src="app.js"></script>
   </body>
 </html>
