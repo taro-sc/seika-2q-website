@@ -1,5 +1,6 @@
 import { createScope, animate, utils, stagger, createTimeline } from 'animejs';
 
+
 createScope({
   mediaQueries: {
     isSmall: '(max-width: 100px)',
@@ -21,6 +22,13 @@ createScope({
     duration: reduceMotion ? 0 : isSmall ? 750 : 1250,
   });
 });
+const button1 = document.getElementById("button1");
+button1.onclick = onclick;
+
+function onclick() {
+  const group1 = document.getElementById("group1")
+  group1.classList.toggle("hidden")
+}
 
 const [$button1, $button2] = utils.$('.revert');
 
@@ -63,8 +71,16 @@ const scope2 = createScope({ root: '.row-2' }).add(scopeConstructor);
 const revertScope1 = () => scope1.revert();
 const revertScope2 = () => scope2.revert();
 
-$button1.addEventListener('click', revertScope1);
-$button2.addEventListener('click', revertScope2);
+// $button1.addEventListener('click', revertScope1);
+// $button2.addEventListener('click', revertScope2);
+
+// const button2 = document.getElementById("button2");
+// button2.onclick2 = onclick2;
+
+// function onclick2() {
+//   const group2 = document.getElementById("group2")
+//   group2.classList.toggle("hidden2")
+// }
 
 
 animate('.triangle', {
@@ -74,3 +90,11 @@ animate('.triangle', {
   loop: true,
   alternate: true
 });
+
+// const button3 = document.getElementById("button3");
+// button3.onclick3 = onclick3;
+
+// function onclick3() {
+//   const group3 = document.getElementById("group3")
+//   group3.classList.toggle("hidden3")
+// }

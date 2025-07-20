@@ -21,6 +21,9 @@
         display: flex;
          /* justify-content: space-around;  */
       }
+      .aa{
+        display: flex;
+      }
       .triangle{
         background-color: red;
         width: 25px;
@@ -28,12 +31,42 @@
         clip-path: polygon(50% 0, 100% 100%, 0 100%);
 
       }
-    </style>
+
+      .hidden {
+      display: none;
+     }
+     
+
+         
+     button {
+       background-color: #4CAF50;
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;
+       box-shadow: 0px 5px #999;
+     }
+
+     .button:active {
+       box-shadow: 0 0; /* 影を消す */
+       transform: translateY(4px); /* 少し下げる */
+     }
+     
+   </style>
+   <button id="button1">◻︎</button>
+   
+
     <!--squareの場合、色をつけてあげないと見えない。ただし、文字の場合見える。-->
   </head>
   <body>
+    
     <!--divは見えない箱-->
-    <div class="iframe-content resizable">
+    <div id="group1" class="iframe-content resizable hidden">
       <div class="large centered row">
         <div class="col">
           <div class="square"></div>
