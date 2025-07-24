@@ -65,6 +65,14 @@ const scopeConstructor = (scope) => {
   };
 };
 
+const button2 = document.getElementById("button2");
+button2.onclick2 = onclick2;
+
+function onclick2() {
+  const group2 = document.getElementById("group2")
+  group2.classList.toggle("hidden")
+}
+
 const scope1 = createScope({ root: '.row-1' }).add(scopeConstructor);
 const scope2 = createScope({ root: '.row-2' }).add(scopeConstructor);
 
@@ -90,6 +98,14 @@ animate('.triangle', {
   loop: true,
   alternate: true
 });
+
+const button3 = document.getElementById("button3");
+button3.onclick3 = onclick3;
+
+function onclick3() {
+  const group3 = document.getElementById("group3")
+  group3.classList.toggle("hidden")
+}
 
 // const button3 = document.getElementById("button3");
 // button3.onclick3 = onclick3;
