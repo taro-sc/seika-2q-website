@@ -66,12 +66,15 @@ const scopeConstructor = (scope) => {
 };
 
 const button2 = document.getElementById("button2");
-button2.onclick2 = onclick2;
+button2.onclick = onclick2;
 
 function onclick2() {
   const group2 = document.getElementById("group2")
   group2.classList.toggle("hidden")
+  const group4 = document.getElementById("group4")
+  group4.classList.toggle("hidden")
 }
+
 
 const scope1 = createScope({ root: '.row-1' }).add(scopeConstructor);
 const scope2 = createScope({ root: '.row-2' }).add(scopeConstructor);
@@ -100,7 +103,7 @@ animate('.triangle', {
 });
 
 const button3 = document.getElementById("button3");
-button3.onclick3 = onclick3;
+button3.onclick = onclick3;
 
 function onclick3() {
   const group3 = document.getElementById("group3")
